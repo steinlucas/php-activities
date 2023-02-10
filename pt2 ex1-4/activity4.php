@@ -53,7 +53,7 @@
         $pessoa1 = ['nr' => 1, 'nome'=> 'Lucas',    'idade' => '49', 'cidade' => 'Blumenau'];
         $pessoa2 = ['nr' => 2, 'nome'=> 'Henrique', 'idade' => '50', 'cidade' => 'Blumenau'];
         $pessoa3 = ['nr' => 3, 'nome'=> 'Juliano',  'idade' => '53', 'cidade' => 'Blumenau'];
-        $pessoa4 = ['nr' => 4, 'nome'=> 'Bruno', 'idade' => '61', 'cidade' => 'Gaspar'];
+        $pessoa4 = ['nr' => 4, 'nome'=> 'Bruno',    'idade' => '61', 'cidade' => 'Gaspar'];
         $pessoa5 = ['nr' => 5, 'nome'=> 'Sorocaba', 'idade' => '60', 'cidade' => 'Brusque'];
         $pessoa6 = ['nr' => 6, 'nome'=> 'Maiara',   'idade' => '71', 'cidade' => 'Gaspar'];
         $pessoa7 = ['nr' => 7, 'nome'=> 'Maraisa',  'idade' => '29', 'cidade' => 'Brusque'];
