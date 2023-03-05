@@ -11,9 +11,11 @@
         <form method="POST" name="formulario">
         <br>
         <p>
+
         <?php
         function listaPessoasAcima50($listaPessoas) {
             echo 'Listar os dados das pessoas acima de 50 anos.<br>';
+
             foreach ($listaPessoas as $umaPessoa) {
                 if ($umaPessoa['idade'] > 50) {
                     echo ($umaPessoa['nr']. ' - '.$umaPessoa['nome'].' - '.$umaPessoa['idade'].' - '.$umaPessoa['cidade'].'<br>');
@@ -23,6 +25,7 @@
 
         function listaPessoasGaspar($listaPessoas) {
             echo 'Listas os dados de todas as pessoas da cidade da Gaspar.<br>';
+
             foreach ($listaPessoas as $umaPessoa) {
                 if ($umaPessoa['cidade'] == 'Gaspar') {
                     echo ($umaPessoa['nr']. ' - '.$umaPessoa['nome'].' - '.$umaPessoa['idade'].' - '.$umaPessoa['cidade'].'<br>');
@@ -32,6 +35,7 @@
 
         function listaPessoasComecamABC($listaPessoas) {
             echo 'Listar os dados das pessoas que começam com as letras A, B ou C.<br>';
+
             foreach ($listaPessoas as $umaPessoa) {
                 if (substr($umaPessoa['nome'], 0, 1) == 'A' || substr($umaPessoa['nome'], 0, 1) == 'B' || substr($umaPessoa['nome'], 0, 1) == 'C') {
                     echo ($umaPessoa['nr']. ' - '.$umaPessoa['nome'].' - '.$umaPessoa['idade'].' - '.$umaPessoa['cidade'].'<br>');
@@ -41,6 +45,7 @@
 
         function listaPessoasAcima60DeGaspar($listaPessoas) {
             echo 'Listar os dados das pessoas maiores de 60 anos da cidade de Gaspar.<br>';
+
             foreach ($listaPessoas as $umaPessoa) {
                 if ($umaPessoa['idade'] > 60 && $umaPessoa['cidade'] == 'Gaspar') {
                     echo ($umaPessoa['nr']. ' - '.$umaPessoa['nome'].' - '.$umaPessoa['idade'].' - '.$umaPessoa['cidade'].'<br>');
@@ -77,7 +82,9 @@
         listaPessoasComecamABC($listaPessoas);
         listaPessoasAcima60DeGaspar($listaPessoas);
         ?>
+
         <br><br>
+
         <button class="btn btn-success">Calcular vetor</button>
     </form>
     </body>
